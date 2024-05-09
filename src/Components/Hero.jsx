@@ -1,9 +1,9 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import Icon from '@mui/material/Icon';
+import Icon from "@mui/material/Icon";
 const styles = {
   fontFamily: '"Poppins", sans-serif',
 };
@@ -13,8 +13,8 @@ const styles2 = {
 };
 
 const styles3 = {
-    fontFamily: '"Poppins", sans-serif',
-  };
+  fontFamily: '"Poppins", sans-serif',
+};
 
 function Hero() {
   return (
@@ -38,10 +38,20 @@ function Hero() {
         <Icon>
           <LinkedInIcon />
         </Icon>
-        <Typography variant="h7" gutterBottom sx={styles3}>
-          LinkedIn
-        </Typography>
       </Box>
+      <Typography variant="h7" gutterBottom sx={styles3}>
+        LinkedIn
+      </Typography>
+
+
+      <Box>
+        <Icon>
+          <LinkedInIcon />
+        </Icon>
+      </Box>
+      <Typography variant="h7" gutterBottom sx={styles3}>
+        LinkedIn
+      </Typography>
     </>
   );
 }
