@@ -5,68 +5,106 @@ import Icon from "@mui/material/Icon";
 import LinkedInIcon from "../assets/LinkedIn.svg";
 import GitHubIcon from "../assets/GitHubIcon.svg";
 import MediumIcon from "../assets/medium.svg";
+import { Margin } from "@mui/icons-material";
 
 const styles = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
+  marginLeft: "40vw",
 };
 
 const styles2 = {
   fontFamily: '"Zen Dots", cursive',
   color: "white",
+  marginLeft: "27vw",
 };
 
 const styles3 = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
+  marginLeft: "28vw",
+};
+
+const styles4 = {
+  fontFamily: '"Poppins", sans-serif',
+  color: "white",
+  marginLeft: "31vw",
+};
+
+const iconstyle = {
+  fontFamily: '"Poppins", sans-serif',
+  color: "white",
+  fontSize:"12px",
+  marginLeft: "-10px"
 };
 
 function Hero() {
   return (
     <>
       <div style={{ backgroundColor: "black" }}>
-        <Box sx={{ width: "100%" }}>
+        <Box sx={{ width: "100vw" }}>
           <Typography variant="h3" gutterBottom sx={styles}>
             Hello I'm
           </Typography>
           <Typography variant="h2" gutterBottom sx={styles2}>
             Isuru Jayalath
           </Typography>
-          <Typography variant="h4" gutterBottom sx={styles}>
+          <Typography variant="h4" gutterBottom sx={styles3}>
             Undergraduate Interested in
           </Typography>
-          <Typography variant="h4" gutterBottom sx={styles}>
-            Web development
+          <Typography variant="h4" gutterBottom sx={styles4}>
+            Full stack Development
           </Typography>
         </Box>
 
-        <Box sx={{ display: "flex" }}>
-          <Box>
+        <Box sx={{ display: "flex", flexDirection: "row", marginLeft: "40vw" }}>
+          <Box
+            sx={{
+              marginRight: "25px",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
             <Icon>
               <img src={LinkedInIcon}></img>
             </Icon>
+            <Typography variant="h7" gutterBottom sx={iconstyle}>
+              LinkedIn
+            </Typography>
           </Box>
-          <Typography variant="h7" gutterBottom sx={styles3}>
-            LinkedIn
-          </Typography>
 
-          <Box>
+
+          <Box
+            sx={{
+              marginRight: "25px",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
             <Icon>
               <img src={GitHubIcon}></img>
             </Icon>
+            <Typography variant="h7" gutterBottom sx={iconstyle}>
+              GitHub
+            </Typography>
           </Box>
-          <Typography variant="h7" gutterBottom sx={styles3}>
-            GitHub
-          </Typography>
 
-          <Box>
+
+          <Box
+            sx={{
+              marginRight: "25px",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
             <Icon>
               <img src={MediumIcon}></img>
             </Icon>
-          </Box>
-          <Typography variant="h7" gutterBottom sx={styles3}>
+            <Typography variant="h7" gutterBottom sx={iconstyle}>
             Medium
-          </Typography>
+            </Typography>
+          </Box>
+
         </Box>
       </div>
     </>
