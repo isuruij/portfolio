@@ -5,12 +5,15 @@ import Icon from "@mui/material/Icon";
 import LinkedInIcon from "../assets/LinkedIn.svg";
 import GitHubIcon from "../assets/GitHubIcon.svg";
 import MediumIcon from "../assets/medium.svg";
+import arrowIcon from "../assets/arrow.svg";
+
 import { Margin } from "@mui/icons-material";
 
 const styles = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
   marginLeft: "40vw",
+  paddingTop: "10vh",
 };
 
 const styles2 = {
@@ -34,8 +37,8 @@ const styles4 = {
 const iconstyle = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
-  fontSize:"12px",
-  marginLeft: "-10px"
+  fontSize: "12px",
+  marginLeft: "-10px",
 };
 
 function Hero() {
@@ -57,7 +60,14 @@ function Hero() {
           </Typography>
         </Box>
 
-        <Box sx={{ display: "flex", flexDirection: "row", marginLeft: "40vw" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            marginLeft: "40vw",
+            paddingBottom: "10vh",
+          }}
+        >
           <Box
             sx={{
               marginRight: "25px",
@@ -72,7 +82,6 @@ function Hero() {
               LinkedIn
             </Typography>
           </Box>
-
 
           <Box
             sx={{
@@ -89,7 +98,6 @@ function Hero() {
             </Typography>
           </Box>
 
-
           <Box
             sx={{
               marginRight: "25px",
@@ -101,7 +109,7 @@ function Hero() {
               <img src={MediumIcon}></img>
             </Icon>
             <Typography variant="h7" gutterBottom sx={iconstyle}>
-            Medium
+              Medium
             </Typography>
           </Box>
 
