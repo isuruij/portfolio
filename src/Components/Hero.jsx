@@ -12,7 +12,7 @@ import { Margin } from "@mui/icons-material";
 const styles = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
-  marginLeft: "41vw",
+  marginLeft: "42vw",
   paddingTop: "10vh",
 };
 
@@ -32,6 +32,7 @@ const styles4 = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
   marginLeft: "34vw",
+  marginBottom: "5vh",
 };
 
 const iconstyle = {
@@ -64,8 +65,9 @@ function Hero() {
           sx={{
             display: "flex",
             flexDirection: "row",
-            marginLeft: "42vw",
-            paddingBottom: "10vh",
+            marginLeft: "43vw",
+            paddingBottom: "20vh",
+            
           }}
         >
           <Box
