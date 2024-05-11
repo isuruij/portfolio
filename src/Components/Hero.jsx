@@ -12,26 +12,26 @@ import { Margin } from "@mui/icons-material";
 const styles = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
-  marginLeft: "40vw",
+  marginLeft: "41vw",
   paddingTop: "10vh",
 };
 
 const styles2 = {
   fontFamily: '"Zen Dots", cursive',
   color: "white",
-  marginLeft: "27vw",
+  marginLeft: "29vw",
 };
 
 const styles3 = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
-  marginLeft: "28vw",
+  marginLeft: "31vw",
 };
 
 const styles4 = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
-  marginLeft: "31vw",
+  marginLeft: "34vw",
 };
 
 const iconstyle = {
@@ -64,7 +64,7 @@ function Hero() {
           sx={{
             display: "flex",
             flexDirection: "row",
-            marginLeft: "40vw",
+            marginLeft: "42vw",
             paddingBottom: "10vh",
           }}
         >
