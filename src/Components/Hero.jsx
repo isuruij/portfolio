@@ -13,7 +13,7 @@ const styles = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
   marginLeft: "42vw",
-  paddingTop: "10vh",
+  paddingTop: "20vh",
 };
 
 const styles2 = {
