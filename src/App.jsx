@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
   return (
-    <div>
+    <div style={{marginLeft:"0px"}}>
       <Hero />
       <About/>
       <ProjectList/>

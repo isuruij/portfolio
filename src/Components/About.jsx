@@ -107,10 +107,7 @@ const About = () => {
   };
 
   return (
-    <div>
-      <Box
-        sx={{ width: "100vw", backgroundColor: "#272727", paddingTop: "10vh" }}
-      >
+    <div style={{width: "100vw", backgroundColor: "#272727", paddingTop: "10vh"}}>
         <Typography variant="h4" gutterBottom ref={ref1} sx={styles}>
           Who am I
         </Typography>
@@ -134,7 +131,6 @@ const About = () => {
         <Button variant="outlined" sx={buttonStyle} ref={ref3}>
           Download CV
         </Button>
-      </Box>
     </div>
   );
 };
