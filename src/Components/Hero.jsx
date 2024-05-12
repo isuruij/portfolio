@@ -67,7 +67,6 @@ function Hero() {
             flexDirection: "row",
             marginLeft: "43vw",
             paddingBottom: "20vh",
-            
           }}
         >
           <Box
@@ -114,9 +113,6 @@ function Hero() {
               Medium
             </Typography>
           </Box>
-
-          
-
         </Box>
       </div>
     </>
