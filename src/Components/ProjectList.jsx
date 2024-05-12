@@ -6,14 +6,32 @@ import mysql from "../assets/mysql.svg";
 import boostrap from "../assets/boostrap.svg";
 import mui from "../assets/mui.svg";
 import azure from "../assets/azure.svg";
+import Typography from "@mui/material/Typography";
 
 function ProjectList() {
   return (
     <>
-      <div
-        style={{ backgroundColor: "black" }}
-      >
-        <div style={{ marginLeft: "20vw",display: "flex", flexWrap: "wrap" }}>
+      <div style={{ backgroundColor: "black", paddingTop: "10vh" }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{
+            marginBottom: "5vh",
+            marginLeft: "37vw",
+            color: "white",
+            fontFamily: '"Zen Dots", cursive',
+          }}
+        >
+          My Projects
+        </Typography>
+        <div
+          style={{
+            marginLeft: "0vw",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           <Project
             title="Tax Computation System"
             discription="Web application for income tax computation and
@@ -44,6 +62,16 @@ function ProjectList() {
             icon1={react}
             icon2={mui}
           ></Project>
+        </div>
+        <br></br>
+        <div
+          style={{
+            marginLeft: "0vw",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           <Project
             title="Task Manager"
             discription="A simple task management application add, update and

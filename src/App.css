@@ -2,3 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.custom-icon-button:hover {
+  background-color: transparent !important; /* Make background transparent on hover */
+}

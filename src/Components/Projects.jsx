@@ -9,13 +9,23 @@ import react from "../assets/react.svg";
 import { Favorite, Settings, Help } from "@mui/icons-material";
 import Stack from "@mui/material/Stack";
 
+const customStyles = {
+    '&:hover': {
+      backgroundColor: 'transparent', // Make background transparent on hover
+    },
+  };
+
 export default function Projects(props) {
   return (
-    <Card sx={{ width: 320, backgroundColor: "#272727" }}>
+    <Card sx={{marginLeft:"18px", border: "none", width: 320, backgroundColor: "#272727" }}>
       <div>
         <Typography
           level="title-lg"
-          sx={{ color: "white", fontFamily: '"Poppins", sans-serif' }}
+          sx={{
+            marginLeft: "5vw",
+            color: "white",
+            fontFamily: '"Poppins", sans-serif',
+          }}
         >
           {props.title}
         </Typography>
@@ -44,25 +54,29 @@ export default function Projects(props) {
       </CardContent>
       <Typography
         level="title-md"
-        sx={{ marginLeft:"28%",color: "white", fontFamily: '"Poppins", sans-serif' }}
+        sx={{
+          marginLeft: "28%",
+          color: "white",
+          fontFamily: '"Poppins", sans-serif',
+        }}
       >
         Technologies
       </Typography>
 
-      <Stack direction="row" spacing={2}>
-        <IconButton>
+      <Stack direction="row" spacing={2} sx={{ marginLeft: "5vw" }}>
+        <IconButton className="custom-icon-button">
           <img src={props.icon1}></img>
         </IconButton>
-        <IconButton>
+        <IconButton className="custom-icon-button">
           <img src={props.icon2}></img>
         </IconButton>
-        <IconButton>
+        <IconButton className="custom-icon-button">
           <img src={props.icon3}></img>
         </IconButton>
-        <IconButton>
+        <IconButton className="custom-icon-button">
           <img src={props.icon4}></img>
         </IconButton>
-        <IconButton>
+        <IconButton className="custom-icon-button">
           <img src={props.icon5}></img>
         </IconButton>
       </Stack>
