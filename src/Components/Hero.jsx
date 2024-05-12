@@ -5,27 +5,43 @@ import Icon from "@mui/material/Icon";
 import LinkedInIcon from "../assets/LinkedIn.svg";
 import GitHubIcon from "../assets/GitHubIcon.svg";
 import MediumIcon from "../assets/medium.svg";
+
+
 import arrowIcon from "../assets/arrow.svg";
 
-import { Margin } from "@mui/icons-material";
 
 const styles = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
   marginLeft: "42vw",
   paddingTop: "20vh",
+  animation: 'fadeIn 3s',
+  '@keyframes fadeIn': {
+    from: { opacity: 0 },
+    to: { opacity: 1 }
+  }
 };
 
 const styles2 = {
   fontFamily: '"Zen Dots", cursive',
   color: "white",
   marginLeft: "29vw",
+  animation: 'fadeIn 5s',
+  '@keyframes fadeIn': {
+    from: { opacity: 0 },
+    to: { opacity: 1 }
+  }
 };
 
 const styles3 = {
   fontFamily: '"Poppins", sans-serif',
   color: "white",
   marginLeft: "31vw",
+  animation: 'fadeIn 5s',
+  '@keyframes fadeIn': {
+    from: { opacity: 0 },
+    to: { opacity: 1 }
+  }
 };
 
 const styles4 = {
@@ -33,6 +49,11 @@ const styles4 = {
   color: "white",
   marginLeft: "34vw",
   marginBottom: "5vh",
+  animation: 'fadeIn 5s',
+  '@keyframes fadeIn': {
+    from: { opacity: 0 },
+    to: { opacity: 1 }
+  }
 };
 
 const iconstyle = {
@@ -40,14 +61,22 @@ const iconstyle = {
   color: "white",
   fontSize: "12px",
   marginLeft: "-10px",
+  animation: 'fadeIn 5s',
+  '@keyframes fadeIn': {
+    from: { opacity: 0 },
+    to: { opacity: 1 }
+  }
 };
+
+
+
 
 function Hero() {
   return (
     <>
       <div style={{ backgroundColor: "black" }}>
         <Box sx={{ width: "100vw" }}>
-          <Typography variant="h3" gutterBottom sx={styles}>
+          <Typography  variant="h3" gutterBottom sx={styles}>
             Hello I'm
           </Typography>
           <Typography variant="h2" gutterBottom sx={styles2}>

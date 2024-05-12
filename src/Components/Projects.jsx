@@ -5,19 +5,56 @@ import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import IconButton from "@mui/joy/IconButton";
 import Typography from "@mui/joy/Typography";
-import react from "../assets/react.svg";
 import { Favorite, Settings, Help } from "@mui/icons-material";
 import Stack from "@mui/material/Stack";
 
 const customStyles = {
-    '&:hover': {
-      backgroundColor: 'transparent', // Make background transparent on hover
-    },
-  };
+  '&:hover': {
+    backgroundColor: 'transparent', // Make background transparent on hover
+  },
+};
 
 export default function Projects(props) {
+  const [isVisible, setIsVisible] = React.useState(false);
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5 // Change this threshold as needed
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  const cardStyles = {
+    marginLeft: "18px",
+    border: "none",
+    width: 320,
+    backgroundColor: "#272727",
+    opacity: isVisible ? 1 : 0,
+    transition: "opacity 1s ease-in-out"
+  };
+
   return (
-    <Card sx={{marginLeft:"18px", border: "none", width: 320, backgroundColor: "#272727" }}>
+    <Card sx={cardStyles} ref={ref}>
       <div>
         <Typography
           level="title-lg"
