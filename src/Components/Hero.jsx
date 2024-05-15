@@ -7,6 +7,7 @@ import GitHubIcon from "../assets/GitHubIcon.svg";
 import MediumIcon from "../assets/medium.svg";
 
 
+
 import arrowIcon from "../assets/arrow.svg";
 
 
@@ -106,7 +107,9 @@ function Hero() {
             }}
           >
             <Icon>
-              <img src={LinkedInIcon}></img>
+            <a href="https://www.linkedin.com/in/isuru-jayalath-773782244/">
+              <img src={LinkedInIcon} onClick={()=>{}}></img>
+             </a> 
             </Icon>
             <Typography variant="h7" gutterBottom sx={iconstyle}>
               LinkedIn
@@ -121,7 +124,9 @@ function Hero() {
             }}
           >
             <Icon>
+            <a href="https://github.com/isuruij">
               <img src={GitHubIcon}></img>
+            </a>
             </Icon>
             <Typography variant="h7" gutterBottom sx={iconstyle}>
               GitHub
@@ -136,7 +141,9 @@ function Hero() {
             }}
           >
             <Icon>
+            <a href="https://medium.com/@isuru99">
               <img src={MediumIcon}></img>
+            </a>
             </Icon>
             <Typography variant="h7" gutterBottom sx={iconstyle}>
               Medium
