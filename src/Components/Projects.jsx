@@ -9,8 +9,8 @@ import { Favorite, Settings, Help } from "@mui/icons-material";
 import Stack from "@mui/material/Stack";
 
 const customStyles = {
-  '&:hover': {
-    backgroundColor: 'transparent', // Make background transparent on hover
+  "&:hover": {
+    backgroundColor: "transparent", // Make background transparent on hover
   },
 };
 
@@ -29,7 +29,7 @@ export default function Projects(props) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.5 // Change this threshold as needed
+        threshold: 0.5, // Change this threshold as needed
       }
     );
 
@@ -50,29 +50,27 @@ export default function Projects(props) {
     width: 320,
     backgroundColor: "#272727",
     opacity: isVisible ? 1 : 0,
-    transition: "opacity 1s ease-in-out"
+    transition: "opacity 1s ease-in-out",
   };
 
   return (
     <Card sx={cardStyles} ref={ref}>
-      <div>
-        <Typography
-          level="title-lg"
-          sx={{
-            marginLeft: "5vw",
-            color: "white",
-            fontFamily: '"Poppins", sans-serif',
-          }}
-        >
-          {props.title}
-        </Typography>
-      </div>
+      <Typography
+        level="title-lg"
+        sx={{
+          margin: "auto",
+          color: "white",
+          fontFamily: '"Poppins", sans-serif',
+        }}
+      >
+        {props.title}
+      </Typography>
+
       <AspectRatio minHeight="120px" maxHeight="200px">
         <img
-          src="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286"
-          srcSet="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286&dpr=2 2x"
+          src={props.src}
           loading="lazy"
-          alt=""
+          alt="image"
         />
       </AspectRatio>
       <CardContent orientation="horizontal">
@@ -92,7 +90,7 @@ export default function Projects(props) {
       <Typography
         level="title-md"
         sx={{
-          marginLeft: "28%",
+          margin: "auto",
           color: "white",
           fontFamily: '"Poppins", sans-serif',
         }}
@@ -100,22 +98,36 @@ export default function Projects(props) {
         Technologies
       </Typography>
 
-      <Stack direction="row" spacing={2} sx={{ marginLeft: "5vw" }}>
-        <IconButton className="custom-icon-button">
-          <img src={props.icon1}></img>
-        </IconButton>
-        <IconButton className="custom-icon-button">
-          <img src={props.icon2}></img>
-        </IconButton>
-        <IconButton className="custom-icon-button">
-          <img src={props.icon3}></img>
-        </IconButton>
-        <IconButton className="custom-icon-button">
-          <img src={props.icon4}></img>
-        </IconButton>
-        <IconButton className="custom-icon-button">
-          <img src={props.icon5}></img>
-        </IconButton>
+      <Stack direction="row" spacing={2} sx={{ margin: "auto" }}>
+        {props.icon1 && (
+          <IconButton className="custom-icon-button">
+            <img src={props.icon1} alt="Icon" />
+          </IconButton>
+        )}
+
+        {props.icon2 && (
+          <IconButton className="custom-icon-button">
+            <img src={props.icon2} alt="Icon" />
+          </IconButton>
+        )}
+
+        {props.icon3 && (
+          <IconButton className="custom-icon-button">
+            <img src={props.icon3} alt="Icon" />
+          </IconButton>
+        )}
+
+        {props.icon4 && (
+          <IconButton className="custom-icon-button">
+            <img src={props.icon4} alt="Icon" />
+          </IconButton>
+        )}
+
+        {props.icon5 && (
+          <IconButton className="custom-icon-button">
+            <img src={props.icon5} alt="Icon" />
+          </IconButton>
+        )}
       </Stack>
       <Button
         variant="solid"

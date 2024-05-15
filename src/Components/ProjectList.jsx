@@ -7,6 +7,11 @@ import boostrap from "../assets/boostrap.svg";
 import mui from "../assets/mui.svg";
 import azure from "../assets/azure.svg";
 import Typography from "@mui/material/Typography";
+import taxproject from "../assets/images/2.png";
+import news from "../assets/images/news.png";
+import taskmanager from "../assets/images/taskmanager.png";
+import portfolio from "../assets/images/portfolio.png";
+import helmet from "../assets/images/helmet.jpg";
 
 function ProjectList() {
   return (
@@ -34,6 +39,7 @@ function ProjectList() {
         >
           <Project
             title="Tax Computation System"
+            src={taxproject}
             discription="Web application for income tax computation and
         management of individuals.The system automates tax
         calculations based on user income details and relevant tax
@@ -48,6 +54,7 @@ function ProjectList() {
           ></Project>
           <Project
             title="News Application"
+            src={news}
             discription="This news application delivers articles through a userfriendly interface. It retrieves news using newsapi.org's API.
         Users can explore various categories or use the search
         functionality with keywords to discover specific news
@@ -57,10 +64,13 @@ function ProjectList() {
             icon3={boostrap}
           ></Project>
           <Project
-            title="Personal Portfolio"
-            discription="Personal Portfolio to showcase my previously done projects."
+            title="Task Manager"
+            src={taskmanager}
+            discription="A simple task management application add, update and
+        delete tasks according to user preference."
             icon1={react}
-            icon2={mui}
+            icon2={js}
+            icon3={mui}
           ></Project>
         </div>
         <br></br>
@@ -73,15 +83,15 @@ function ProjectList() {
           }}
         >
           <Project
-            title="Task Manager"
-            discription="A simple task management application add, update and
-        delete tasks according to user preference."
+            title="Personal Portfolio"
+            src={portfolio}
+            discription="Personal Portfolio to showcase my previously done projects."
             icon1={react}
-            icon2={js}
-            icon3={mui}
+            icon2={mui}
           ></Project>
           <Project
             title="Miner Safety Helmet"
+            src={helmet}
             discription="Microcontroller-based hardware project that aims to
         enhance miners’ safety. Features of the helmet are two-way
         voice communication, real-time data monitoring (Methane,
