@@ -9,7 +9,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const styles = {
   fontFamily: '"Zen Dots", cursive',
   color: "white",
-  marginLeft: "39vw",
+  marginLeft: "43vw",
   marginBottom: "5vh",
   animation: "fadeIn 5s",
   "@keyframes fadeIn": {

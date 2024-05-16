@@ -3,6 +3,7 @@ import Hero from './Components/Hero'
 import About from './Components/About'
 import ProjectList from './Components/ProjectList'
 import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <About/>
       <ProjectList/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }
