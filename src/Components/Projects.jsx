@@ -67,11 +67,7 @@ export default function Projects(props) {
       </Typography>
 
       <AspectRatio minHeight="120px" maxHeight="200px">
-        <img
-          src={props.src}
-          loading="lazy"
-          alt="image"
-        />
+        <img src={props.src} loading="lazy" alt="image" />
       </AspectRatio>
       <CardContent orientation="horizontal">
         <div>
@@ -129,6 +125,7 @@ export default function Projects(props) {
           </IconButton>
         )}
       </Stack>
+
       <Button
         variant="solid"
         size="md"
@@ -143,7 +140,8 @@ export default function Projects(props) {
           fontFamily: '"Poppins", sans-serif',
         }}
       >
-        View
+        {" "}
+        <a style={{textDecoration:"none"}} href={props.link}>View </a>
       </Button>
     </Card>
   );
