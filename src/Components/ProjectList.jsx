@@ -65,6 +65,7 @@ function ProjectList() {
             icon1={react}
             icon2={js}
             icon3={boostrap}
+            icon4={azure}
           ></Project>
           <Project
             title="Task Manager"
