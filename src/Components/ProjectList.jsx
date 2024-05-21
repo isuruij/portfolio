@@ -57,7 +57,7 @@ function ProjectList() {
           <Project
             title="News Application"
             src={news}
-            link="https://github.com/isuruij/newsApp.git"
+            link="https://inewsapp.azurewebsites.net/"
             discription="This news application delivers articles through a userfriendly interface. It retrieves news using newsapi.org's API.
         Users can explore various categories or use the search
         functionality with keywords to discover specific news
