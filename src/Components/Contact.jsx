@@ -5,6 +5,7 @@ import Icon from "@mui/material/Icon";
 import EmailIcon from "@mui/icons-material/Email";
 import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import "../App.css";
 
 const styles = {
   fontFamily: '"Zen Dots", cursive',
@@ -39,11 +40,12 @@ function Contact() {
         paddingBottom: "10vh",
       }}
     >
-      <Typography variant="h5" sx={styles}>
+      <Typography variant="h5" sx={styles} className="projecttitle">
         Contact me
       </Typography>
 
       <Box
+        className="contacticons"
         sx={{
           marginRight: "25px",
           display: "flex",
@@ -52,26 +54,44 @@ function Contact() {
           marginLeft: "0vw",
         }}
       >
-        <Icon>
-          <EmailIcon style={{ color: "white" }} />
-        </Icon>
-        <Typography variant="h7" sx={iconstyle}>
-          isuruijs@gmail.com
-        </Typography>
+        <div style={{ display: "flex" }}>
+          <div>
+            <Icon>
+              <EmailIcon style={{ color: "white" }} />
+            </Icon>
+          </div>
+          <div>
+            <Typography variant="h7" sx={iconstyle}>
+              isuruijs@gmail.com
+            </Typography>
+          </div>
+        </div>
 
-        <Icon>
-          <SmartphoneIcon style={{ color: "white" }} />
-        </Icon>
-        <Typography variant="h7" sx={iconstyle}>
-          +94 71 605 5166
-        </Typography>
+        <div style={{ display: "flex" }}>
+          <div>
+            <Icon>
+              <SmartphoneIcon style={{ color: "white" }} />
+            </Icon>
+          </div>
+          <div>
+            <Typography variant="h7" sx={iconstyle}>
+              +94 71 605 5166
+            </Typography>
+          </div>
+        </div>
 
-        <Icon>
-          <LinkedInIcon style={{ color: "white" }} />
-        </Icon>
-        <Typography variant="h7" sx={iconstyle}>
-          Isuru Jayalath
-        </Typography>
+        <div style={{display:"flex"}}>
+          <div>
+            <Icon>
+              <LinkedInIcon style={{ color: "white" }} />
+            </Icon>
+          </div>
+          <div>
+            <Typography variant="h7" sx={iconstyle}>
+              Isuru Jayalath
+            </Typography>
+          </div>
+        </div>
       </Box>
     </div>
   );

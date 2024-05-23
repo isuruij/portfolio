@@ -9,7 +9,7 @@ body {
 
 @media screen and (max-width: 740px) {
  .txt1{
-  margin-left: 33vw  !important;
+  margin-left: 34vw  !important;
   font-size: 35px !important;
   padding-top: 10vh !important;
  }
@@ -62,5 +62,12 @@ body {
 
  .secondList{
   margin-top: 0px !important;
+ }
+
+ .contacticons{
+  display: flex !important;
+  flex-direction: column !important;
+  
+  margin-left: 30vw !important;
  }
 }
