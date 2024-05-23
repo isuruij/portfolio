@@ -13,6 +13,7 @@ import news from "../assets/images/news.png";
 import taskmanager from "../assets/images/taskmanager.png";
 import portfolio from "../assets/images/portfolio.png";
 import helmet from "../assets/images/helmet.jpg";
+import "../App.css"
 
 function ProjectList() {
   return (
@@ -20,6 +21,7 @@ function ProjectList() {
       <div style={{ backgroundColor: "black", paddingTop: "10vh" ,paddingBottom:"10vh"}}>
         <Typography
           variant="h4"
+          className="projecttitle"
           gutterBottom
           sx={{
             marginBottom: "5vh",
@@ -78,10 +80,10 @@ function ProjectList() {
             icon3={mui}
           ></Project>
         </div>
-        <br></br>
-        <div
+        <div 
+         className="secondList"
           style={{
-            marginLeft: "0vw",
+            marginTop:"20px",
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",

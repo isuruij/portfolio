@@ -7,6 +7,7 @@ import IconButton from "@mui/joy/IconButton";
 import Typography from "@mui/joy/Typography";
 import { Favorite, Settings, Help } from "@mui/icons-material";
 import Stack from "@mui/material/Stack";
+import "../App.css"
 
 const customStyles = {
   "&:hover": {
@@ -54,7 +55,7 @@ export default function Projects(props) {
   };
 
   return (
-    <Card sx={cardStyles} ref={ref}>
+    <Card sx={cardStyles} ref={ref} className="projectcard">
       <Typography
         level="title-lg"
         sx={{

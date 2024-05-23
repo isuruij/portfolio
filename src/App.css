@@ -6,3 +6,61 @@ body {
 .custom-icon-button:hover {
   background-color: transparent !important; /* Make background transparent on hover */
 }
+
+@media screen and (max-width: 740px) {
+ .txt1{
+  margin-left: 33vw  !important;
+  font-size: 35px !important;
+  padding-top: 10vh !important;
+ }
+
+ .txt2{
+  margin-left: 15vw  !important;
+  font-size: 35px !important;
+ }
+
+ .txt3{
+  margin-left: 25vw  !important;
+  font-size: 15px !important;
+ }
+
+ .txt4{
+  margin-left: 29vw  !important;
+  font-size: 15px !important;
+ }
+
+
+ .socialIcons{
+  margin-left: 34vw !important;
+  margin-top: -2vh;
+  padding-bottom: 10vh !important;
+ }
+
+ .abouttitle{
+  margin-left: 33vw  !important;
+  font-size: 25px !important;
+ }
+
+ .abouttext{
+
+  font-size: 15px !important;
+  padding-left: 5vw  !important;
+ }
+
+ .cvbutton{
+  margin-left: 32vw !important;
+ }
+
+ .projecttitle{
+  font-size: 25px !important;
+  margin-left: 26vw !important;
+ }
+
+ .projectcard{
+  margin-bottom: 20px;
+ }
+
+ .secondList{
+  margin-top: 0px !important;
+ }
+}

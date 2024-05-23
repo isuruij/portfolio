@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import "../App.css"
+
 
 const About = () => {
   const [isVisible1, setIsVisible1] = useState(false);
@@ -108,10 +110,11 @@ const About = () => {
 
   return (
     <div style={{width: "100vw", backgroundColor: "#272727", paddingTop: "10vh"}}>
-        <Typography variant="h4" gutterBottom ref={ref1} sx={styles}>
+        <Typography variant="h4" className="abouttitle" gutterBottom ref={ref1} sx={styles}>
           Who am I
         </Typography>
         <div
+         className="abouttext"
           style={{
             width: "70vw",
             marginLeft: "10vw",
@@ -128,7 +131,7 @@ const About = () => {
             industry.
           </Typography>
         </div>
-        <Button variant="outlined" sx={buttonStyle} ref={ref3}>
+        <Button className="cvbutton" variant="outlined" sx={buttonStyle} ref={ref3}>
           Download CV
         </Button>
     </div>

@@ -5,6 +5,7 @@ import Icon from "@mui/material/Icon";
 import LinkedInIcon from "../assets/LinkedIn.svg";
 import GitHubIcon from "../assets/GitHubIcon.svg";
 import MediumIcon from "../assets/medium.svg";
+import "../App.css"
 
 
 
@@ -26,7 +27,7 @@ const styles = {
 const styles2 = {
   fontFamily: '"Zen Dots", cursive',
   color: "white",
-  marginLeft: "29vw",
+  marginLeft:"29vw",
   animation: 'fadeIn 5s',
   '@keyframes fadeIn': {
     from: { opacity: 0 },
@@ -77,21 +78,22 @@ function Hero() {
     <>
       <div style={{ backgroundColor: "black" }}>
         <Box sx={{ width: "100vw" }}>
-          <Typography  variant="h3" gutterBottom sx={styles}>
+          <Typography  className="txt1" variant="h3" gutterBottom sx={styles}>
             Hello I'm
           </Typography>
-          <Typography variant="h2" gutterBottom sx={styles2}>
+          <Typography className="txt2" variant="h2" gutterBottom sx={styles2}>
             Isuru Jayalath
           </Typography>
-          <Typography variant="h4" gutterBottom sx={styles3}>
+          <Typography className="txt3" variant="h4" gutterBottom sx={styles3}>
             Undergraduate Interested in
           </Typography>
-          <Typography variant="h4" gutterBottom sx={styles4}>
+          <Typography className="txt4" variant="h4" gutterBottom sx={styles4}>
             Full stack Development
           </Typography>
         </Box>
 
         <Box
+          className="socialIcons"
           sx={{
             display: "flex",
             flexDirection: "row",
