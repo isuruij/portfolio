@@ -9,23 +9,23 @@ body {
 
 @media screen and (max-width: 740px) {
  .txt1{
-  margin-left: 34vw  !important;
+  margin-left: 35vw  !important;
   font-size: 35px !important;
-  padding-top: 10vh !important;
+  padding-top: 25vh !important;
  }
 
  .txt2{
-  margin-left: 15vw  !important;
+  margin-left: 14vw  !important;
   font-size: 35px !important;
  }
 
  .txt3{
-  margin-left: 25vw  !important;
+  margin-left: 22vw  !important;
   font-size: 15px !important;
  }
 
  .txt4{
-  margin-left: 29vw  !important;
+  margin-left: 28vw  !important;
   font-size: 15px !important;
  }
 
@@ -33,7 +33,7 @@ body {
  .socialIcons{
   margin-left: 34vw !important;
   margin-top: -2vh;
-  padding-bottom: 10vh !important;
+  padding-bottom: 42vh !important;
  }
 
  .abouttitle{

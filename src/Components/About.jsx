@@ -94,7 +94,8 @@ const About = () => {
     color: "white",
     width: "10vw",
     opacity: isVisible2 ? 1 : 0,
-    transition: "opacity 1s ease-in-out"
+    transition: "opacity 1s ease-in-out",
+    fontSize:"15px"
   };
 
   const buttonStyle = {

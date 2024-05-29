@@ -35,7 +35,7 @@ function Contact() {
   return (
     <div
       style={{
-        backgroundColor: "#272727",
+        backgroundColor: "black",
         paddingTop: "10vh",
         paddingBottom: "10vh",
       }}
