@@ -70,4 +70,13 @@ body {
   
   margin-left: 30vw !important;
  }
+
+ .posts{
+  margin-left: 16vw !important;
+  font-size: 25px !important;
+ }
+ .carousel{
+  width: 90vw !important;
+  margin-top:3vh !important;
+ }
 }

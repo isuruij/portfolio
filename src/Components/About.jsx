@@ -133,7 +133,13 @@ const About = () => {
           </Typography>
         </div>
         <Button className="cvbutton" variant="outlined" sx={buttonStyle} ref={ref3}>
-          Download CV
+          <a
+            href="/CV.pdf"
+            download="Isuru Jayalath.pdf"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            Download CV
+          </a>
         </Button>
     </div>
   );
