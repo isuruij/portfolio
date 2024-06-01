@@ -7,6 +7,47 @@ body {
   background-color: transparent !important; /* Make background transparent on hover */
 }
 
+.navbar {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.navcontent{
+  font-size: 18px;
+  color: white;
+  font-family: '"Poppins", sans-serif';
+
+}
+
+.navbar span {
+  position: relative; /* Required to position the ::after element relative to the span */
+  margin-left: 0vw;
+  margin-right: 4vw;
+  margin-top: 5vh;
+  display: inline-block; /* Ensures proper space handling */
+  cursor: pointer;
+}
+
+.navbar span::after {
+  content: ''; /* Required to create a pseudo-element */
+  position: absolute; /* Position it relative to the span */
+  left: 0;
+  bottom: -2px; /* Adjust as needed to position the underline properly */
+  width: 0; /* Initially no underline */
+  height: 2px; /* Adjust height as needed */
+  background-color: white; /* The color of the underline */
+  transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar span:hover::after {
+  width: 100%; /* Full width underline on hover */
+}
+
+
+
 @media screen and (max-width: 740px) {
  .txt1{
   margin-left: 35vw  !important;
