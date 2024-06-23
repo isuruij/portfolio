@@ -7,6 +7,7 @@ import slide3 from "../assets/images/javaVsC.jpg";
 import slide4 from "../assets/images/mongoDB.jpg";
 import slide5 from "../assets/images/orm.jpg";
 import slide6 from "../assets/images/nrf.jpg";
+import slide7 from "../assets/images/dom.jpg";
 
 const items = [
   {
@@ -48,6 +49,12 @@ const items = [
     description:
       "Have you ever wondered about the inner workings of these wireless connections or how you could ...",
       link:"https://medium.com/nerd-for-tech/exploring-the-world-of-wireless-communication-my-journey-with-the-nrf24-module-35b6a4856a26"
+  },  {
+    image: slide7,
+    label: "Understanding the React Virtual DOM",
+    description:
+      "As we know React is a popular JavaScript library for building user interfaces, particularly single-page applications where UI updates…",
+      link:"https://medium.com/nerd-for-tech/understanding-the-react-virtual-dom-3de1f62aa8fd"
   },
 ];
 

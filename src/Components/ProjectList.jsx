@@ -7,18 +7,27 @@ import boostrap from "../assets/boostrap.svg";
 import mui from "../assets/mui.svg";
 import azure from "../assets/azure.svg";
 import arduino from "../assets/arduino.svg";
+import aws from "../assets/aws.svg";
+import socketio from "../assets/socketio.svg";
 import Typography from "@mui/material/Typography";
 import taxproject from "../assets/images/2.png";
 import news from "../assets/images/news.png";
 import taskmanager from "../assets/images/taskmanager.png";
 import portfolio from "../assets/images/portfolio.png";
 import helmet from "../assets/images/helmet.jpg";
-import "../App.css"
+import chat from "../assets/images/chat.png";
+import "../App.css";
 
 function ProjectList() {
   return (
     <>
-      <div style={{ backgroundColor: "black", paddingTop: "10vh" ,paddingBottom:"10vh"}}>
+      <div
+        style={{
+          backgroundColor: "black",
+          paddingTop: "10vh",
+          paddingBottom: "10vh",
+        }}
+      >
         <Typography
           variant="h4"
           className="projecttitle"
@@ -70,25 +79,37 @@ function ProjectList() {
             icon4={azure}
           ></Project>
           <Project
-            title="Task Manager"
-            src={taskmanager}
-            link="https://github.com/isuruij/taskManager.git"
-            discription="A simple task management application add, update and
-        delete tasks according to user preference."
+            title="Chat Application"
+            src={chat}
+            link="http://13.53.174.161"
+            discription="A realtime chat application that allows users to chat with other users. Users can create chat rooms and others can join the same room to chat. 
+            The application is built using React, Node.js, and Socket.io and implemented CI/CD with github actions and hosted on aws EC2 instance."
             icon1={react}
             icon2={js}
-            icon3={mui}
+            icon3={socketio}
+            icon4={aws}
           ></Project>
         </div>
-        <div 
-         className="secondList"
+        <div
+          className="secondList"
           style={{
-            marginTop:"20px",
+            marginTop: "20px",
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
           }}
         >
+          {" "}
+          <Project
+            title="Task Manager"
+            src={taskmanager}
+            link="https://github.com/isuruij/taskManager.git"
+            discription="A simple task management application add, update and
+    delete tasks according to user preference."
+            icon1={react}
+            icon2={js}
+            icon3={mui}
+          ></Project>
           <Project
             title="Personal Portfolio"
             src={portfolio}
