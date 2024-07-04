@@ -13,48 +13,86 @@ import arrowIcon from "../assets/arrow.svg";
 
 
 const styles = {
-  fontFamily: '"Poppins", sans-serif',
-  color: "white",
-  marginLeft: "42vw",
+  marginLeft: "41.5vw",
   paddingTop: "20vh",
-  animation: 'fadeIn 3s',
+  fontFamily:'"Poppins", sans-serif',
+  color: "transparent",
+  animation: 'fadeIn 5s, moveGradient 5s infinite',
+  backgroundImage: 'linear-gradient(90deg, #32CD32, #1E90FF)', // Lime green and dodger blue
+  backgroundSize: '200% 200%',
+  WebkitBackgroundClip: 'text',
   '@keyframes fadeIn': {
     from: { opacity: 0 },
     to: { opacity: 1 }
+  },
+  '@keyframes moveGradient': {
+    '0%': { backgroundPosition: '0% 50%' },
+    '50%': { backgroundPosition: '100% 50%' },
+    '100%': { backgroundPosition: '0% 50%' }
   }
 };
 
 const styles2 = {
   fontFamily: '"Zen Dots", cursive',
-  color: "white",
-  marginLeft:"29vw",
-  animation: 'fadeIn 5s',
+  color: "transparent",
+  marginLeft: "29vw",
+  animation: 'fadeIn 5s, moveGradient 5s infinite',
+  backgroundImage: 'linear-gradient(90deg, #32CD32, #1E90FF)', // Lime green and dodger blue
+  backgroundSize: '200% 200%',
+  WebkitBackgroundClip: 'text',
   '@keyframes fadeIn': {
     from: { opacity: 0 },
     to: { opacity: 1 }
+  },
+  '@keyframes moveGradient': {
+    '0%': { backgroundPosition: '0% 50%' },
+    '50%': { backgroundPosition: '100% 50%' },
+    '100%': { backgroundPosition: '0% 50%' }
   }
 };
 
+
+
+
+
+
 const styles3 = {
-  fontFamily: '"Poppins", sans-serif',
-  color: "white",
   marginLeft: "31vw",
-  animation: 'fadeIn 5s',
+  fontFamily: '"Poppins", sans-serif',
+  color: "transparent",
+  marginLeft: "31vw",
+  animation: 'fadeIn 5s, moveGradient 5s infinite',
+  backgroundImage: 'linear-gradient(90deg, #32CD32, #1E90FF)', // Lime green and dodger blue
+  backgroundSize: '200% 200%',
+  WebkitBackgroundClip: 'text',
   '@keyframes fadeIn': {
     from: { opacity: 0 },
     to: { opacity: 1 }
+  },
+  '@keyframes moveGradient': {
+    '0%': { backgroundPosition: '0% 50%' },
+    '50%': { backgroundPosition: '100% 50%' },
+    '100%': { backgroundPosition: '0% 50%' }
   }
 };
 
 const styles4 = {
-  fontFamily: '"Poppins", sans-serif',
-  color: "white",
   marginLeft: "34vw",
   marginBottom: "5vh",
-  animation: 'fadeIn 5s',
+  fontFamily: '"Poppins", sans-serif',
+  color: "transparent",
+  animation: 'fadeIn 5s, moveGradient 5s infinite',
+  backgroundImage: 'linear-gradient(90deg, #32CD32, #1E90FF)', // Lime green and dodger blue
+  backgroundSize: '200% 200%',
+  WebkitBackgroundClip: 'text',
   '@keyframes fadeIn': {
     from: { opacity: 0 },
     to: { opacity: 1 }
+  },
+  '@keyframes moveGradient': {
+    '0%': { backgroundPosition: '0% 50%' },
+    '50%': { backgroundPosition: '100% 50%' },
+    '100%': { backgroundPosition: '0% 50%' }
   }
 };
 
