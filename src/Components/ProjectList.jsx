@@ -8,14 +8,18 @@ import mui from "../assets/mui.svg";
 import azure from "../assets/azure.svg";
 import arduino from "../assets/arduino.svg";
 import aws from "../assets/aws.svg";
+import antd from "../assets/ant.svg";
+import cpannel from "../assets/cpanel.svg";
 import socketio from "../assets/socketio.svg";
 import Typography from "@mui/material/Typography";
 import taxproject from "../assets/images/2.png";
 import news from "../assets/images/news.png";
 import taskmanager from "../assets/images/taskmanager.png";
 import portfolio from "../assets/images/portfolio.png";
+import mongo from "../assets/mongo.svg";
 import helmet from "../assets/images/helmet.jpg";
 import chat from "../assets/images/chat.png";
+import lak from "../assets/images/lak.png";
 import "../App.css";
 
 function ProjectList() {
@@ -50,6 +54,24 @@ function ProjectList() {
           }}
         >
           <Project
+            title="Lakpawura"
+            src={lak}
+            link="https://lakpawura.lk"
+            discription="Web application for Lakpawura organization to post their
+projects. designed to facilitate a community-driven
+platform where users can register, create accounts, and
+manage their posts. I am responsible for backend
+development and deployment of the entire applicaton.
+
+        "
+            icon1={react}
+            icon2={js}
+            icon3={mysql}
+            icon4={antd}
+            icon5={cpannel}
+          ></Project>
+
+          <Project
             title="Tax Computation System"
             src={taxproject}
             link="https://github.com/isuruij/TaxComputationSystem-FrontEnd"
@@ -78,17 +100,6 @@ function ProjectList() {
             icon3={boostrap}
             icon4={azure}
           ></Project>
-          <Project
-            title="Chat Application"
-            src={chat}
-            link="http://13.53.174.161"
-            discription="A realtime chat application that allows users to chat with other users. Users can create chat rooms and others can join the same room to chat. 
-            The application is built using React, Node.js, and Socket.io and implemented CI/CD with github actions and hosted on aws EC2 instance."
-            icon1={react}
-            icon2={js}
-            icon3={socketio}
-            icon4={aws}
-          ></Project>
         </div>
         <div
           className="secondList"
@@ -101,6 +112,17 @@ function ProjectList() {
         >
           {" "}
           <Project
+            title="Chat Application"
+            src={chat}
+            link="https://ijchatapp.netlify.app"
+            discription="A realtime chat application that allows users to chat with other users. Users can create chat rooms and others can join the same room to chat. 
+            The application is built using React, Node.js, and Socket.io and implemented CI/CD with github actions and hosted on aws EC2 instance."
+            icon1={react}
+            icon2={js}
+            icon3={socketio}
+            icon4={aws}
+          ></Project>
+          <Project
             title="Task Manager"
             src={taskmanager}
             link="https://github.com/isuruij/taskManager.git"
@@ -109,6 +131,7 @@ function ProjectList() {
             icon1={react}
             icon2={js}
             icon3={mui}
+            icon4={mongo}
           ></Project>
           <Project
             title="Personal Portfolio"
@@ -118,6 +141,18 @@ function ProjectList() {
             icon1={react}
             icon2={mui}
           ></Project>
+        </div>
+
+        <div
+          className="secondList"
+          style={{
+            marginTop: "20px",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          {" "}
           <Project
             title="Miner Safety Helmet"
             src={helmet}
